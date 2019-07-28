@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navContainer {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.fa {
+    padding: 0 20px 0px 20px;
+    color: red;
+}
+.fa:hover {
+    color: black
+}
+.tabArea {
+    margin: 25px 43px 0 43px;
+    width: 100%;
+}
+.tabContainer {
+    width: 30%;
+    display: inline-block;
+}
+.tab {
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    letter-spacing: 5px;
+    width: 32%;
+    height: 35px;
+}
+.about {
+    background-color: #a6a6a6;
+    margin-left: 2%;
+}
+.project1 {
+    background-color: #3F3F3F;
+    color: #C0C0C0;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.project2 {
+    background-color: black;
+    color: #F1F1F1;
+}
+.text-head {
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.text-head:hover {
+    color: red;
+}
+
