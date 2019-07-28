@@ -2,6 +2,23 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.test{
+    background-color: grey
+}
+.hero{
+    float: right;
+    margin-right: 30%;
+}
+h1{
+    font-size: 30px;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
 .navContainer {
     border: none;
     display: flex;
@@ -9,7 +26,7 @@
 }
 .fa {
     padding: 0 20px 0px 20px;
-    color: red;
+    color: #2c6635;
 }
 .fa:hover {
     color: black
@@ -25,7 +42,6 @@
 .tab {
     display: inline-block;
     text-align: center;
-    font-weight: 200;
     font-size: 14px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -33,15 +49,15 @@
     width: 32%;
     height: 35px;
 }
-.about {
+.about-me {
     background-color: #a6a6a6;
-    margin-left: 2%;
+    
 }
 .project1 {
     background-color: #3F3F3F;
     color: #C0C0C0;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: .01%;
+    margin-right: .01%;
 }
 .project2 {
     background-color: black;
@@ -50,9 +66,68 @@
 .text-head {
     margin-top: 8px;
     margin-bottom: 0;
-    text-decoration: none;
 }
 .text-head:hover {
     color: red;
 }
+@media only screen and (max-width:1000px) {
 
+    .tabArea {
+        margin-top: 0px;
+    }
+    .tab-head {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .fa {
+        padding-left: 9%;
+    }
+}
+@media only screen and (max-width:800px) {
+    .tab-head {
+        font-size: 9px;
+    }
+    .tabContainer {
+        width: 100%;
+        display: inline-block;
+    }
+    .tabArea {
+        margin-bottom: -2px;
+    }
+    .fa {
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width:600px) {
+    .tab {
+        height: 30px;
+    }
+    .tabArea{
+        margin-top: 20px;
+    }
+    .tab-head {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .fa {
+        font-size: 1em;
+        padding-left: 8.5%;
+    }
+}
+@media only screen and (max-width:480px) {
+    .tab {
+        height: 25px;
+    }
+    .tabArea {
+        margin-bottom: -1px;
+        margin-top: 10px;
+    }
+    .tab-head {
+        font-size: 8px;
+        margin-top: 8px;
+    }
+    .fa {
+        padding-left: 8%;
+    }
+}
