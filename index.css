@@ -36,11 +36,15 @@ h1 {
     padding: 0 20px 0px 20px;
     color: #052e0b;
 }
-
-.fa:hover {
-    color: black
+.repLink {
+    color: #052e0b;
 }
-
+.fa:hover {
+    color: black;
+}
+.repLink:hover {
+    color: black;
+}
 .tabArea {
     margin: 25px 43px 0 43px;
     width: 100%;
