@@ -39,26 +39,13 @@
     <!--this are will be tabs each project will have a tab-->
     <section class="tabArea">
         <div class="tabContainer">
-            <div class="tab about-me">
-                <a href="">
-                    <h3 class="text-head">About me</h3>
-                </a>
-            </div>
-            <div class="tab project1">
-                <a href="">
-                    <h3 class="text-head">Quiz app</h3>
-                </a>
-            </div>
-            <div class="tab project2">
-                <a href="">
-                    <h3 class="text-head">Project:</h3>
-                </a>
-            </div>
-        </div>
+            <button class="tab about-me" onclick="openContent(event, 'about')" id="defaultOpen">About me</button>
+            <button class="tab project1" onclick="openContent(event, 'p1')">Quiz app</button>
+            <button class="tab project2" onclick="openContent(event, 'p2')">Project:</button>
     </section>
     <!--the main will contain all the info for the tabs.so when a tab is click will display correct info-->
     <main>
-        <section class="about">
+        <section id="about" class="tabContent about">
             <div class="body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -76,43 +63,45 @@
                 </p>
             </div>
         </section>
-        <section class="projects1">
+        <section id="p1" class="tabContent projects1">
             <div class="project-title">
-                <h2><a href="https://glwolf.github.io/quizApp/" target="_blank">Green Lantern Quiz</a></h2>
+                <h2><a class="fa" href="https://glwolf.github.io/quizApp/" target="_blank">Green Lantern Quiz</a></h2>
             </div>
-            <div class="project-img">
-                <img class="image" src="img/snap1.PNG" width="500" />
+            <div class="project-img" style="max-width:500px">
+                <img class="image screenCap1" src="img/snap1.PNG" width="100%" />
+                <img class="image screenCap1" src="img/snap2.PNG" width="100%" />
+                <img class="image screenCap1" src="img/snap3.PNG" width="100%" />
             </div>
             <div class="details">
                 <h2>Description</h2>
                 <p>details about the app</p>
-                </br>
-                </br>
-                <h2>Hurdels</h2><p>chalenges I over came doring proj.</p>
-            </br>
-            </br>
-            <h2>What I learned</h2><p>What i learned</p>
+                <h2>Hurdels</h2>
+                <p>chalenges I over came doring proj.</p>
+                <h2>What I learned</h2>
+                <p>What i learned</p>
             </div>
         </section>
-        <section class="projects2">
-                <div class="project-title">
-                    <h2><a href="https://glwolf.github.io/quizApp/" target="_blank">Green Lantern Quiz</a></h2>
-                </div>
-                <div class="project-img">
-                    <img class="image" src="img/snap1.PNG" width="500" />
-                </div>
-                <div class="details">
-                    <h2>Description</h2>
-                    <p>details about the app</p>
-                    </br>
-                    </br>
-                    <h2>Hurdels</h2><p>chalenges I over came doring proj.</p>
-                </br>
-                </br>
-                <h2>What I learned</h2><p>What i learned</p>
-                </div>
-            </section>
+        </section>
+        <section id="p2" class="tabContent projects2">
+            <div class="project-title">
+                <h2><a class="fa" href="https://glwolf.github.io/quizApp/" target="_blank">Green Lantern Quiz</a></h2>
+            </div>
+            <div class="project-img" style="max-width:500px">
+                <img class="image screenCap2" src="img/snap1.PNG" width="100%" />
+            </div>
+            <div class="details">
+                <h2>Description</h2>
+                <p>details about the app</p>
+                <h2>Hurdels</h2>
+                <p>chalenges I over came doring proj.</p>
+                <h2>What I learned</h2>
+                <p>What i learned</p>
+            </div>
+        </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -2,132 +2,165 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-.test{
-    background-color: grey
+
+.test {
+    background-color: rgb(61, 58, 58)
 }
-.hero{
+
+.hero {
     float: right;
-    margin-right: 30%;
+    margin: 0 30% 30px 0
 }
-h1{
-    font-size: 30px;
+
+h1 {
+    font-size: 50px;
+    color: #2c6635
 }
+
 .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
+    height: 30px;
+    width: 30px;
+    background-color: black;
     border-radius: 50%;
     display: inline-block;
-  }
+    margin: 0 21px 0 21px;
+}
+
 .navContainer {
     border: none;
     display: flex;
     justify-content: center;
 }
+
 .fa {
     padding: 0 20px 0px 20px;
-    color: #2c6635;
+    color: #052e0b;
 }
+
 .fa:hover {
     color: black
 }
+
 .tabArea {
     margin: 25px 43px 0 43px;
     width: 100%;
 }
+
 .tabContainer {
     width: 30%;
     display: inline-block;
 }
+
 .tab {
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
+    font-size: 17px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    letter-spacing: 5px;
     width: 32%;
-    height: 35px;
+    height: 40px;
 }
+
+.tab:hover {
+    background-color: #2c6635;
+}
+
 .about-me {
-    background-color: #a6a6a6;
-    
+    background-color: black;
+    color: white;
+
 }
+
 .project1 {
-    background-color: #3F3F3F;
-    color: #C0C0C0;
+    background-color: black;
+    color: white;
     margin-left: .01%;
     margin-right: .01%;
 }
+
 .project2 {
     background-color: black;
-    color: #F1F1F1;
+    color: white;
 }
-.text-head {
-    margin-top: 8px;
-    margin-bottom: 0;
+
+.tabContent {
+    display: none;
+    padding: 6px 12px;
+    border: 4px solid white;
 }
-.text-head:hover {
-    color: red;
+
+p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #2c6635;
+    margin: 0;
 }
+
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.details {}
+
 @media only screen and (max-width:1000px) {
 
     .tabArea {
         margin-top: 0px;
     }
-    .tab-head {
-        font-size: 12px;
-        margin-top: 10px;
-    }
+
     .fa {
         padding-left: 9%;
     }
 }
+
 @media only screen and (max-width:800px) {
-    .tab-head {
-        font-size: 9px;
-    }
     .tabContainer {
         width: 100%;
         display: inline-block;
     }
+
     .tabArea {
         margin-bottom: -2px;
     }
+
     .fa {
         font-size: 2em;
     }
 }
+
 @media only screen and (max-width:600px) {
     .tab {
         height: 30px;
     }
-    .tabArea{
+
+    .tabArea {
         margin-top: 20px;
     }
-    .tab-head {
-        font-size: 12px;
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
+
     .fa {
         font-size: 1em;
         padding-left: 8.5%;
     }
 }
+
 @media only screen and (max-width:480px) {
     .tab {
         height: 25px;
     }
+
     .tabArea {
         margin-bottom: -1px;
         margin-top: 10px;
     }
-    .tab-head {
-        font-size: 8px;
-        margin-top: 8px;
-    }
+
     .fa {
         padding-left: 8%;
+    }
+
+    h1 {
+        font-size: 20px
+    }
+
+    .dot {
+        margin: 0 10px 0 10px;
     }
 }
