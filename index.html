@@ -12,39 +12,39 @@
 </head>
 
 <body class="test">
-    <nav class="navBar">
-        <div class="navContainer">
-            <a href="mailto:bentotony10@yahoo.com" target="_blank">
-                <p class="fa fa-envelope" style="font-size: 35px"></p>
-            </a>
-            <a href="https://www.linkedin.com/in/tony-bento-35801818b/" target="_blank">
-                <p class="fa fa-linkedin" style="font-size: 35px"></p>
-            </a>
-            <a href="https://github.com/GLWolf" target="_blank">
-                <p class="fa fa-github" style="font-size: 35px"></p>
-            </a>
-            <a href="https://twitter.com/Tonybento5" target="_blank">
-                <p class="fa fa-twitter" style="font-size: 35px"></p>
-            </a>
-        </div>
-    </nav>
-    <header class="name">
-        <img src="img/4.png" alt="Tony Bento">
+    <header role="banner">
+        <nav class="navBar">
+            <div class="navContainer">
+                <a href="mailto:bentotony10@yahoo.com" target="_blank">
+                    <p class="fa fa-envelope" style="font-size: 35px"></p>
+                </a>
+                <a href="https://www.linkedin.com/in/tony-bento-35801818b/" target="_blank">
+                    <p class="fa fa-linkedin" style="font-size: 35px"></p>
+                </a>
+                <a href="https://github.com/GLWolf" target="_blank">
+                    <p class="fa fa-github" style="font-size: 35px"></p>
+                </a>
+                <a href="https://twitter.com/Tonybento5" target="_blank">
+                    <p class="fa fa-twitter" style="font-size: 35px"></p>
+                </a>
+            </div>
+        </nav>
+        <img class="name" src="img/4.png" alt="Tony Bento">
         <section class="hero">
             <h1>Imagine <span class="dot"></span>
                 Discover<span class="dot"></span>
                 Create</h1>
         </section>
     </header>
-    <!--this are will be tabs each project will have a tab-->
-    <section class="tabArea">
-        <div class="tabContainer">
-            <button class="tab about-me" onclick="openContent(event, 'about')" id="defaultOpen">About me</button>
-            <button class="tab project1" onclick="openContent(event, 'p1')">Quiz app</button>
-            <button class="tab project2" onclick="openContent(event, 'p2')">Project:</button>
-    </section>
     <!--the main will contain all the info for the tabs.so when a tab is click will display correct info-->
-    <main>
+    <main role="main">
+        <!--this are will be tabs each project will have a tab-->
+        <section class="tabArea">
+            <div class="tabContainer">
+                <button class="tab about-me" onclick="openContent(event, 'about')" id="defaultOpen">About me</button>
+                <button class="tab project1" onclick="openContent(event, 'p1')">Quiz app</button>
+                <button class="tab project2" onclick="openContent(event, 'p2')">???</button>
+        </section>
         <section id="about" class="tabContent about">
             <div class="body">
                 <p>I am still working on the about me. I want to create somthing personal and unique. I’m sorry that I
@@ -63,7 +63,7 @@
         </section>
         <section id="p1" class="tabContent projects1">
             <div class="project-title">
-                <h2><a class="fa" href="https://glwolf.github.io/quizApp/" target="_blank">Green Lantern Quiz</a></h2>
+                <h2>Green Lantern Quiz</h2>
             </div>
             <div class="project-img" style="max-width:500px">
                 <img class="image screenCap1" src="img/snap1.PNG" width="100%" />
@@ -71,15 +71,19 @@
                 <img class="image screenCap1" src="img/snap3.PNG" width="100%" />
             </div>
             <div class="details">
+                <h2>Links</h2>
+                <ul>
+                    <li><a class="repLink" href="https://glwolf.github.io/quizApp/" target="_blank">Live App</a></li>
+                    <li><a class="repLink" href="https://github.com/GLWolf/quizApp" target="_blank">Repository</a></li>
+                </ul>
                 <h2>Description</h2>
                 <p>This app will test your knowledge of the green lantern comics. It’s a 10 question quiz that use HTML,
-                    CSS, JavaScript and JQuery. Here is a link to the<a class="repLink"
-                        href="https://github.com/GLWolf/quizApp" target="_blank"> repository</a>. This is a fun app to
+                    CSS, JavaScript and JQuery. This is a fun app to
                     play with and
                     test your knowledge. I plan on updating a few futures and adding an audio files to the quiz. This
                     will read the questions and answers to you also give a brief history to each question. </p>
                 <h2>Hurdles</h2>
-                <p>Most of the hurdles I face during this project was typo errors and syntax errors. Coding at 3am not
+                <p>Most of the hurdles I face during this project were typos and syntax errors. Coding at 3am, not
                     the best idea. I have to come up with ways for the text and the background to get along and not make
                     it hard to read. I have already started on the audio function and it has been challenging and fun.
                 </p>
@@ -87,11 +91,18 @@
                 <p>I learned a lot during my time building this app. Creating listeners that would iterate to the right
                     question and bring up the right answers. Learning to add audio files and adding them to the app.
                     Have not updated the master branch still working on the kinks.</p>
+                <h2>Coding Languages</h2>
+                <ul class="Lang">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                </ul>
             </div>
         </section>
-        </section>
         <section id="p2" class="tabContent projects2">
-            <div class="project-title">
+            <p>Future Project will go here.</p>
+            <!-- <div class="project-title">
                 <h2><a class="fa" href="https://glwolf.github.io/quizApp/" target="_blank">Green Lantern Quiz</a></h2>
             </div>
             <div class="project-img" style="max-width:500px">
@@ -104,7 +115,7 @@
                 <p>chalenges I over came doring proj.</p>
                 <h2>What I learned</h2>
                 <p>What i learned</p>
-            </div>
+            </div> -->
         </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

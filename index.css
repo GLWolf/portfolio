@@ -1,16 +1,13 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-.test {
-    background-color: rgb(61, 58, 58)
-}
-
-.hero {
-    float: right;
-    margin: 0 30% 30px 0
-}
+/* body {
+    /* background-color: rgb(61, 58, 58) 
+} */
 
 h1 {
     font-size: 50px;
@@ -30,21 +27,29 @@ h1 {
     border: none;
     display: flex;
     justify-content: center;
+    width: 100%
 }
 
 .fa {
     padding: 0 20px 0px 20px;
-    color: #052e0b;
+    /* color: #052e0b; */
+    color: red;
 }
+
 .repLink {
-    color: #052e0b;
+    /* color: #052e0b; */
+    color: red;
+    font-size: 25px;
 }
+
 .fa:hover {
     color: black;
 }
+
 .repLink:hover {
     color: black;
 }
+
 .tabArea {
     margin: 25px 43px 0 43px;
     width: 100%;
@@ -88,7 +93,8 @@ h1 {
 .tabContent {
     display: none;
     padding: 6px 12px;
-    border: 4px solid white;
+    border: 4px solid black;
+    width: 100%;
 }
 
 p {
@@ -98,12 +104,18 @@ p {
     margin: 0;
 }
 
-h2 {
-    font-size: 50px;
+.lang,
+li {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #2c6635;
     margin: 0;
 }
 
-.details {}
+h2 {
+    font-size: 50px;
+    margin: 20px 0 10px 0;
+}
 
 @media only screen and (max-width:1000px) {
 
@@ -152,8 +164,7 @@ h2 {
     }
 
     .tabArea {
-        margin-bottom: -1px;
-        margin-top: 10px;
+        margin: 10px 0 -1px 0;
     }
 
     .fa {
@@ -161,10 +172,24 @@ h2 {
     }
 
     h1 {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .dot {
         margin: 0 10px 0 10px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .name {
+        width: 95vw;
+        margin-top: 15px;
+    }
+
+    .test {
+        width: 95vw
+    }
+    .navBar {
+        width: 95vw
     }
 }
