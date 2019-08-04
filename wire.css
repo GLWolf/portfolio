@@ -11,7 +11,9 @@
 
 h1 {
     font-size: 50px;
-    color: #2c6635
+    color: #2c6635;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .dot {
@@ -91,7 +93,7 @@ h1 {
 }
 
 .tabContent {
-    display: none;
+    /* display: none; */
     padding: 6px 12px;
     border: 4px solid black;
     width: 100%;
@@ -141,9 +143,42 @@ h2 {
     .fa {
         font-size: 2em;
     }
+    .tab {
+        height: 25px;
+    }
+
+    .tabArea {
+        margin: 10px 0 -1px 0;
+    }
+
+    .fa {
+        padding-left: 8%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .dot {
+        margin: 0 10px 0 10px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .name {
+        width: 95vw;
+        margin-top: 30px;
+    }
+
+    .test {
+        width: 95vw
+    }
+    .navBar {
+        width: 95vw
+    }
 }
 
-@media only screen and (max-width:600px) {
+/* @media only screen and (max-width:600px) {
     .tab {
         height: 30px;
     }
@@ -183,7 +218,7 @@ h2 {
 
     .name {
         width: 95vw;
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     .test {
@@ -192,4 +227,4 @@ h2 {
     .navBar {
         width: 95vw
     }
-}
+} */
