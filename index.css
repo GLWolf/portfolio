@@ -8,21 +8,24 @@
 /* body {
     /* background-color: rgb(61, 58, 58) 
 } */
-
+main {
+    width: 95vw;
+}
 h1 {
-    font-size: 50px;
     color: #2c6635;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .dot {
-    height: 30px;
-    width: 30px;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
     margin: 0 21px 0 21px;
+    margin: 0 10px 0 10px;
+    height: 10px;
+    width: 10px;
 }
 
 .navContainer {
@@ -33,14 +36,15 @@ h1 {
 }
 
 .fa {
-    padding: 0 20px 0px 20px;
-    /* color: #052e0b; */
-    color: red;
+    padding: 0 20px 0px 30px;
+    color:#00ce20; 
 }
-
+.fa:before {
+    font-size: 25px
+}
 .repLink {
     /* color: #052e0b; */
-    color: red;
+    color: #00ce20;
     font-size: 25px;
 }
 
@@ -53,13 +57,13 @@ h1 {
 }
 
 .tabArea {
-    margin: 25px 43px 0 43px;
     width: 100%;
+    margin: 10px 0 -1px 10px;
 }
 
 .tabContainer {
-    width: 30%;
     display: inline-block;
+    width: 100%;
 }
 
 .tab {
@@ -67,7 +71,7 @@ h1 {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     width: 32%;
-    height: 40px;
+    height: 25px;
 }
 
 .tab:hover {
@@ -93,14 +97,29 @@ h1 {
 }
 
 .tabContent {
-    display: none;
-    padding: 6px 12px;
+    /* display: none; */
+    padding: 40px 40px 40px 40px;
     border: 4px solid black;
     width: 100%;
+    margin: 0 30px 10px 10px;
+}
+.name {
+    width: 95vw;
+    margin-top: 30px;
+}
+
+.test {
+    width: 100%
+}
+
+.navBar {
+    width: 95vw;
+    margin-top:25px;
+    
 }
 
 p {
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #2c6635;
     margin: 0;
@@ -111,7 +130,7 @@ li {
     font-size: 25px;
     letter-spacing: 2px;
     color: #2c6635;
-    margin: 0;
+    margin: 0 0 0 20px;
 }
 
 h2 {
@@ -119,112 +138,34 @@ h2 {
     margin: 20px 0 10px 0;
 }
 
-@media only screen and (max-width:1000px) {
-
-    .tabArea {
-        margin-top: 0px;
-    }
-
-    .fa {
-        padding-left: 9%;
-    }
+@media only screen and (min-width:1000px) {
+    
 }
-
-@media only screen and (max-width:800px) {
-    .tabContainer {
-        width: 100%;
-        display: inline-block;
-    }
-
-    .tabArea {
-        margin-bottom: -2px;
-    }
-
-    .fa {
-        font-size: 2em;
-    }
-    .tab {
-        height: 25px;
-    }
-
-    .tabArea {
-        margin: 10px 0 -1px 0;
-    }
-
-    .fa {
-        padding-left: 8%;
-    }
-
+@media only screen and (min-width:800px) {
     h1 {
-        font-size: 20px;
+        font-size: 50px;
     }
-
     .dot {
-        margin: 0 10px 0 10px;
-        height: 10px;
-        width: 10px;
-    }
-
-    .name {
-        width: 95vw;
-        margin-top: 30px;
-    }
-
-    .test {
-        width: 95vw
-    }
-    .navBar {
-        width: 95vw
-    }
-}
-
-/* @media only screen and (max-width:600px) {
-    .tab {
         height: 30px;
+        width: 30px;
     }
-
-    .tabArea {
-        margin-top: 20px;
-    }
-
-    .fa {
-        font-size: 1em;
-        padding-left: 8.5%;
-    }
-}
-
-@media only screen and (max-width:480px) {
     .tab {
-        height: 25px;
+        height: 40px;
     }
-
-    .tabArea {
-        margin: 10px 0 -1px 0;
+    .tabContainer {
+        width: 70%;
     }
-
-    .fa {
-        padding-left: 8%;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .dot {
-        margin: 0 10px 0 10px;
-        height: 10px;
-        width: 10px;
-    }
-
     .name {
-        width: 95vw;
-        margin-top: 30px;
-    }
-
-    .test {
-        width: 95vw
+        width: 40vw;
     }
     .navBar {
-        width: 95vw
+        width: 100%;
     }
-} */
+    .fa {
+        margin: 0 50px 0 50px;
+        font-size: 3px
+    }
+    .fa:before {
+        font-size: 35px
+    }
+}
