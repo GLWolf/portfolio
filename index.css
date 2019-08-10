@@ -119,6 +119,7 @@ h1 {
 }
 
 p {
+    text-indent: 40px;
     font-size: 20px;
     letter-spacing: 2px;
     color: #2c6635;
