@@ -42,8 +42,10 @@
         <section class="tabArea">
             <div class="tabContainer">
                 <button class="tab about-me" onclick="openContent(event, 'about')" id="defaultOpen">About me</button>
-                <button class="tab project1" onclick="openContent(event, 'p1')">Projects</button>
-                <!-- <button class="tab project2" onclick="openContent(event, 'p2')">???</button> -->
+                <button class="tab project1" onclick="openContent(event, 'p1')">Quiz App </button>
+                <button class="tab project2" onclick="openContent(event, 'p2')">Game Sales</button>
+                <button class="tab project3" onclick="openContent(event, 'p3')">WorkOutWF</button>
+                <button class="tab project4" onclick="openContent(event, 'p4')">WTDD</button>
         </section>
         <section id="about" class="tabContent about">
             <div class="body">
@@ -53,7 +55,7 @@
                     projects was what got me interested in coding. Seeing how code can turn into incredible and useful
                     websites still makes me excited and ready to learn more. I always loved building things from Legos
                     to models, and because I have an overactive imagination I come up with some interesting designs.
-                    Unfortunately, very bad stick figures are the extent of my skills in art. However, with codding I
+                    Unfortunately, very bad stick figures are the extent of my skills in art. However, with coding I
                     can make the most of my ideas, and they come to life on the screen.</p>
                                    </br>   
                 <p> I am a first-generation American and the youngest in my family. My dad is from the Portuguese
@@ -97,19 +99,159 @@
                     app.</p>
                 <h2>Coding Languages</h2>
                 <ul class="Lang">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript(ES6)</li>
                     <li>JQuery</li>
                 </ul>
             </div>
-            <!-- <div class="project2">
-                <p>future projects will go here.</p>
-            </div> -->
         </section>
         <section id="p2" class="tabContent projects2">
-
-
+            <div class="project-title">
+                <h2>Game Sales</h2>
+            </div>
+            <div class="project-img" style="max-width:500px">
+                <img class="image screenCap2" src="img/snap4.PNG" alt="screen cap landing" width="100%" />
+                <img class="image screenCap2" src="img/snap5.PNG" alt="screen cap results" width="100%" />
+                <img class="image screenCap2" src="img/snap6.PNG" alt="screen cap error" width="100%" />
+            </div>
+            <div class="details">
+                <h2>Links</h2>
+                <ul>
+                    <li><a class="repLink" href="https://glwolf.github.io/api-hack/" target="_blank">Live App</a></li>
+                    <li><a class="repLink" href="https://github.com/GLWolf/api-hack" target="_blank">Repository</a></li>
+                </ul>
+                <h2>Description</h2>
+                <p>This app will helps find sales for pc games. It will give you the normal price, the sale price, a link 
+                    to Metacritic, and the website were the sales at. If you search for a game that you know is a pc game 
+                    and it does not show up it’s because the game is not on sale.</p>
+                <h2>Hurdles</h2>
+                <p>One challenge I faced during this project was that API website only works on Internet Explorer and it was
+                    not clear how to use the information. A lot of trial and error. Another issue I had was with styling the 
+                    image that appeared for the game. Most images were not the same size with a few being tiny and others being 
+                    huge.</p>
+                <h2>What I learned</h2>
+                <p>I learned a lot about problem solving, especially with working on two different APIs and having them work 
+                    cohesively together. I also got better grasp of creative styling. For example, if you’re on the landing page 
+                    and hover over the links that show under the store list of sale, a small image of the game will appear.</p>
+                <h2>Coding Languages</h2>
+                <ul class="Lang">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript(ES6)</li>
+                    <li>JQuery</li>
+                    <li>API</li>
+                </ul>
+            </div>
+        </section>
+        <section id="p3" class="tabContent projects3">
+            <div class="project-title">
+                <h2>Work Out With Friends</h2>
+            </div>
+            <div class="project-img" style="max-width:500px">
+                <img class="image screenCap3" src="img/snap7.PNG" alt="screen cap intro" width="100%" />
+                <img class="image screenCap3" src="img/snap8.PNG" alt="screen cap question" width="100%" />
+                <img class="image screenCap3" src="img/snap9.PNG" alt="screen cap answer" width="100%" />
+                <img class="image screenCap3" src="img/snap10.PNG" alt="screen cap answer" width="100%" />
+            </div>
+            <div class="details">
+                <h2>Links</h2>
+                <ul>
+                    <li><a class="repLink" href="https://workoutwf.now.sh/" target="_blank">Live App</a></li>
+                    <li><a class="repLink" href="https://github.com/GLWolf/WorkOutWF-client" target="_blank">Client repo</a></li>
+                    <li><a class="repLink" href="https://github.com/GLWolf/WorkOutWF-server" target="_blank">Server repo</a></li>
+                </ul>
+                <h2>Description</h2>
+                <p>WorkOutWF is an app that help to connect with others with a similar workout schedule. You can create a profile 
+                    add in a day and general time that you are available to work out. After you can search by day and available times 
+                    and find other users with that availability.</p>
+                <h2>Hurdles</h2>
+                <p>One big obstacle that I overcame on this project was how to get the user to search for other user by the date and 
+                    time. A user updating their profile was easy, but grabbing the data was difficult. Since I only wanted some of the 
+                    data, not the user’s entire list. I created a dropdown search so the user picks from a list search occurs it only 
+                    grabs the requested data.</p>
+                <h2>What I learned</h2>
+                <p>I learned that it is better work on the basics of the app first, and not to get lost in all the add-ons features that
+                    you want to add.</p>
+                <h2>Coding Languages Frontend</h2>
+                <ul class="Lang">
+                    <li>React</li>
+                    <li>Authentication</li>
+                    <li>RESTful API</li>
+                    <li>CSS3</li>
+                    <li>JavaScript(ES6)</li>
+                    <li>HTML5</li>
+                    <li>Testing</li>
+                    <li>Snapshot with Jest and Enzyme</li>
+                    <li>Smoke Test (integration)</li>
+                </ul>
+                <h2>Coding Languages Backend</h2>
+                <ul class="Lang">
+                    <li>SQL</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Mocha</li>
+                </ul>
+            </div>
+        </section>
+        <section id="p4" class="tabContent projects4">
+            <div class="project-title">
+                <h2>What That Data Do</h2>
+            </div>
+            <div class="project-img" style="max-width:500px">
+                <img class="image screenCap4" src="img/snap11.PNG" alt="screen cap intro" width="100%" />
+                <img class="image screenCap4" src="img/snap12.PNG" alt="screen cap question" width="100%" />
+                <img class="image screenCap4" src="img/snap13.PNG" alt="screen cap answer" width="100%" />
+                <img class="image screenCap4" src="img/snap14.PNG" alt="screen cap answer" width="100%" />
+            </div>
+            <div class="details">
+                <h2>Links</h2>
+                <ul>
+                    <li><a class="repLink" href="https://wtdd-rust.now.sh/" target="_blank">Live App</a></li>
+                    <li><a class="repLink" href="https://github.com/clipqq/nw6-capstone-client" target="_blank">Client repo</a></li>
+                    <li><a class="repLink" href="https://github.com/clipqq/nw6-capstone-server" target="_blank">Server repo</a></li>
+                </ul>
+                <h2>Description</h2>
+                <p>WTDD enables users to create visual representations of data from their csv files. Users will be able to graph x y coordinates,
+                    and representing them visually as bar, line, and scatter plot graphs. Make it easy for students/non-technical people to make 
+                    graphs and charts.</p>
+                <h2>Hurdles</h2>
+                <p>Working on a team was a great experience, but something I had to learn quickly was to learn how others like to wright code. 
+                    One amazing thing about coding is that there’s many ways to tackle a problem and create a solution. So I had to learn how each 
+                    member on my team wrote their code so if I had to fix a bug or add a functionality I was not lost on where to start.</p>
+                <h2>What I learned</h2>
+                <p>Working with github and creating multiple branches pushing, pulling, and merging was a headache at first. It took some trial 
+                    and error to understand how to successfully merge branches with only a few conflicts. I truly loved working with a team and 
+                    learning from each member.  </p>
+                <h2>Team</h2>
+                    <h3>WTDD was built by the following</h3>
+                        <ul>
+                            <li>Cliff Tran</li>
+                            <li>Queen Shabazz</li>
+                            <li>Tony Bento</li>
+                            <li>Anthony Gelder</li>
+                            <li>Justin Jeffrey</li>
+                        </ul>
+                    <h2>Coding Languages Frontend</h2>
+                    <ul class="Lang">
+                        <li>React</li>
+                        <li>Authentication</li>
+                        <li>RESTful API</li>
+                        <li>CSS3</li>
+                        <li>JavaScript(ES6)</li>
+                        <li>HTML5</li>
+                        <li>React-VIs(Uber)</li>
+                        <li>Testing</li>
+                        <li>Snapshot with Jest and Enzyme</li>
+                        <li>Smoke Test (integration)</li>
+                    </ul>
+                    <h2>Coding Languages Backend</h2>
+                    <ul class="Lang">
+                        <li>SQL</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Mocha</li>
+            </div>
         </section>
     </main>
     <script src="index.js"></script>
